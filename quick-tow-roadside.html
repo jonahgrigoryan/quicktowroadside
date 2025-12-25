@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quick Tow & Roadside - Fast tire changes and jump starts in Rancho Cordova and nearby areas. Call (916) 812-1919 for 24/7 roadside assistance.">
+    <title>Quick Tow & Roadside | Tire Changes & Jump Starts in Rancho Cordova</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .cta-button {
+            background: #f97316;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #ea580c;
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-phone {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #f97316;
+            display: block;
+            margin-bottom: 2rem;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e3a5f;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-content p {
+            font-size: 1.25rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .services {
+            background: #f8fafc;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: #1e3a5f;
+        }
+
+        .service-card p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #f97316;
+        }
+
+        .service-area {
+            background: white;
+        }
+
+        .service-area-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .service-area h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: #1e3a5f;
+        }
+
+        .service-area p {
+            font-size: 1.25rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .radius-highlight {
+            background: #eff6ff;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        .radius-highlight strong {
+            color: #f97316;
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-phone {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #f97316;
+            display: block;
+            margin-bottom: 1rem;
+            text-decoration: none;
+        }
+
+        .contact p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .availability {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        footer p {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-phone {
+                font-size: 1.5rem;
+            }
+
+            .contact-phone {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Quick Tow & Roadside</div>
+                <a href="tel:+19168121919" class="cta-button">Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Fast Roadside Assistance</h1>
+            <p>Reliable tire changes and jump starts when you need them most</p>
+            <a href="tel:+19168121919" class="hero-phone">(916) 812-1919</a>
+            <a href="tel:+19168121919" class="cta-button" style="background: white; color: #1e3a5f;">Get Help Now</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>Quick Tow & Roadside provides fast, professional tire changes and jump starts in Rancho Cordova and nearby areas.</p>
+                <p>When you're stranded with a flat tire or dead battery, you need help fast. Our team arrives quickly to get you back on the road safely and efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Tire Change</h3>
+                    <p>Professional tire changing service. We'll get your spare tire on and you back on the road in no time.</p>
+                    <div class="price">$85</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔋</div>
+                    <h3>Jump Start</h3>
+                    <p>Dead battery? We provide professional jump start services to get your vehicle running again.</p>
+                    <div class="price">$50</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-area">
+        <div class="container">
+            <h2 class="section-title">Service Area</h2>
+            <div class="service-area-content">
+                <h3>Serving Rancho Cordova & Beyond</h3>
+                <p>We proudly serve the Rancho Cordova area and surrounding communities.</p>
+                <div class="radius-highlight">
+                    <p><strong>FREE service within a 10-mile radius</strong> of Rancho Cordova.</p>
+                    <p>Additional miles are charged along with the service fee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Contact Us</h2>
+            <a href="tel:+19168121919" class="contact-phone">(916) 812-1919</a>
+            <p>Call us anytime for fast, reliable roadside assistance</p>
+            <div class="availability">
+                <p><strong>24/7 Emergency Service Available</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Quick Tow & Roadside. All rights reserved.</p>
+            <p>Serving Rancho Cordova, CA and surrounding areas</p>
+        </div>
+    </footer>
+</body>
+</html>
